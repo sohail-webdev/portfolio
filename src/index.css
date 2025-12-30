@@ -354,6 +354,9 @@ img {
 .project-card-cta-button > a {
   transition: background-color 0.2s ease;
 }
+.mobile-navbar {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
 /* Hover */
 @media (pointer: fine) {
   .nav-links-container ul li a:hover,
