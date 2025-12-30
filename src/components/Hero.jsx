@@ -6,9 +6,9 @@ const Hero = () => {
       <div className="hero">
         <div className="hero-heading-sub-heading-cta">
           <h1>
-            I <span>build</span> and <span>improve</span> landing pages
+            Fast, Modern Websites for <div>Growing Businesses</div>
           </h1>
-          <p>I help businesses fix outdated, slow, or unclear pages by developing clean, mobile-friendly landing pages.</p>
+          <p>I'm Sohail, a web developer specializing in landing pages and business websites that look great and work properly.</p>
           <button>View My Work</button>
         </div>
         <div className="hero-illustration">
