@@ -5,7 +5,7 @@ const Contact = () => {
         <h2>Let's Work Together</h2>
         <div className="footer-sub-heading-links-wrapper">
           <p>
-            Have a project in mind? <div>Send me an email or check out my code on GitHub.</div>
+            Have a project in mind? <span>Send me an email or check out my code on GitHub.</span>
           </p>
           <div className="footer-links">
             <label>
