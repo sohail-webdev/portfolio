@@ -216,6 +216,9 @@ img {
   flex-direction: column;
   font-size: 1.2rem;
 }
+.footer-links label {
+  cursor: pointer;
+}
 .footer-sub-heading-links-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -327,4 +330,30 @@ img {
     text-align: left;
     gap: 0.5rem;
   }
+}
+
+/* Transition */
+.hero-heading-sub-heading-cta button,
+.project-card-cta-button > a {
+  transition: background-color 0.25s ease;
+}
+/* Hover */
+@media (pointer: fine) {
+  .nav-links-container ul li a:hover,
+  .footer-links a:hover span {
+    text-decoration: underline;
+  }
+  .hero-heading-sub-heading-cta button:hover,
+  .project-card-cta-button > a:hover {
+    background-color: #1450d2;
+  }
+}
+/* Active */
+.nav-links-container ul li a:active,
+.footer-links a:active span {
+  text-decoration: underline;
+}
+.hero-heading-sub-heading-cta button:active,
+.project-card-cta-button > a:active {
+  background-color: #1450d2;
 }
