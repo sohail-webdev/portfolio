@@ -55,6 +55,11 @@ button {
   background: none;
   font: inherit;
 }
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 
 /* Header */
 .header-wrapper {
@@ -96,7 +101,7 @@ button {
   cursor: pointer;
 }
 
-/* Hero */
+/* hero-illustration */
 .hero {
   height: 90vh;
   display: grid;
@@ -142,6 +147,7 @@ button {
 }
 .work > p {
   max-width: 50%;
+  color: #5f6368;
 }
 .recent-works-container {
   display: grid;
@@ -211,4 +217,56 @@ button {
 }
 .footer-sub-heading-links-wrapper > p {
   display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #root {
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .hero-illustration {
+    height: 40%;
+    margin: 1rem 0;
+  }
+  .hero-heading-sub-heading-cta {
+    align-items: center;
+  }
+  .hero-heading-sub-heading-cta h1 {
+    font-size: 2rem;
+  }
+  .hero-heading-sub-heading-cta p {
+    max-width: unset;
+  }
+
+  /* Work */
+  .work-wrapper {
+    margin: 4rem 0;
+  }
+  .work > p {
+    max-width: unset;
+  }
+  .project-card > h3 {
+    text-align: left;
+  }
+
+  /* Footer */
+  .footer-sub-heading-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer p {
+    max-width: unset;
+  }
+  .footer-links {
+    text-align: left;
+  }
 }
