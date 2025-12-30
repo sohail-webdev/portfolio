@@ -179,10 +179,27 @@ img {
   flex-wrap: wrap;
   gap: 0.4rem;
 }
-.project-card-tools > p {
+.project-card-tool {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0.2rem 0.8rem;
   font-size: 0.6rem;
+  border-radius: 0.2rem;
+}
+.project-card-tool.tool-html {
+  background-color: #f06529;
+  color: white;
+}
+.project-card-tool.tool-css {
+  background-color: #2965f1;
+  color: white;
+}
+.project-card-tool.tool-javascript {
+  background-color: #f0db4f;
+  color: black;
+}
+.project-card-tool.tool-react {
+  background-color: #61dbfb;
+  color: black;
 }
 .project-card-cta-button {
   width: fit-content;

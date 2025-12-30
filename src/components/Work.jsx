@@ -30,7 +30,9 @@ function ProjectCard({ project }) {
       <h3>{project.title}</h3>
       <div className="project-card-tools">
         {project.tools.map(tool => (
-          <p key={tool}>{tool}</p>
+          <p key={tool} className={`project-card-tool tool-${tool.toLowerCase()}`}>
+            {tool}
+          </p>
         ))}
       </div>
       <div className="project-card-cta-button">
