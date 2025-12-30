@@ -42,9 +42,9 @@ function ProjectCard({ project }) {
   );
 }
 
-const Work = () => {
+const Work = ({ ref }) => {
   return (
-    <div className="work-wrapper" id="work">
+    <div className="work-wrapper" id="work" ref={ref}>
       <section className="work">
         <h2>Recent Projects</h2>
         <p>Practice builds based on real-world design briefs, focused on clean layout, responsiveness, and conversion structure.</p>

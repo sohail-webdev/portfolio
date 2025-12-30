@@ -1,6 +1,6 @@
-const Contact = () => {
+const Contact = ({ ref }) => {
   return (
-    <div className="footer-wrapper" id="contact">
+    <div className="footer-wrapper" id="contact" ref={ref}>
       <footer className="footer">
         <h2>Let's Work Together</h2>
         <div className="footer-sub-heading-links-wrapper">

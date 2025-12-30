@@ -2,7 +2,12 @@ import logo from "../assets/icons/logo.svg";
 import cloe_navbar_icon from "../assets/icons/close-navbar.svg";
 import open_navbar_icon from "../assets/icons/toggle-navbar.svg";
 
-const Header = ({ isMobileNavbarVisible, toggle_mobile_navbar }) => {
+const Header = ({ isMobileNavbarVisible, toggle_mobile_navbar, scrollToSection }) => {
+  function handle_link_click(event) {
+    toggle_mobile_navbar(event);
+    scrollToSection(event);
+  }
+
   return (
     <div className="header-wrapper">
       <header className="header">
@@ -13,13 +18,19 @@ const Header = ({ isMobileNavbarVisible, toggle_mobile_navbar }) => {
         <nav className="nav-links-container">
           <ul>
             <li>
-              <a href="#about">About</a>
+              <a data-name="about" onClick={handle_link_click}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#work">Work</a>
+              <a data-name="work" onClick={handle_link_click}>
+                Work
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a data-name="contact" onClick={handle_link_click}>
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -29,17 +40,17 @@ const Header = ({ isMobileNavbarVisible, toggle_mobile_navbar }) => {
         <div className={`mobile-navbar ${isMobileNavbarVisible ? "visible" : ""}`}>
           <ul>
             <li>
-              <a href="#about" onClick={toggle_mobile_navbar}>
+              <a data-name="about" onClick={handle_link_click}>
                 About
               </a>
             </li>
             <li>
-              <a href="#work" onClick={toggle_mobile_navbar}>
+              <a data-name="work" onClick={handle_link_click}>
                 Work
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={toggle_mobile_navbar}>
+              <a data-name="contact" onClick={handle_link_click}>
                 Contact
               </a>
             </li>
