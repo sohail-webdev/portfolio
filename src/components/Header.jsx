@@ -26,6 +26,25 @@ const Header = ({ isMobileNavbarVisible, toggle_mobile_navbar }) => {
         <button className="header-toggle-navbar-button" onClick={toggle_mobile_navbar}>
           <img src={isMobileNavbarVisible ? cloe_navbar_icon : open_navbar_icon} alt="toggle navbar" />
         </button>
+        <div className={`mobile-navbar ${isMobileNavbarVisible ? "visible" : ""}`}>
+          <ul>
+            <li>
+              <a href="#about" onClick={toggle_mobile_navbar}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#work" onClick={toggle_mobile_navbar}>
+                Work
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={toggle_mobile_navbar}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </header>
     </div>
   );
