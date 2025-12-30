@@ -102,7 +102,7 @@ img {
   cursor: pointer;
 }
 .header-toggle-navbar-button {
-  height: 1.8rem;
+  height: 1.2rem;
   display: none;
 }
 
@@ -237,6 +237,15 @@ img {
   .header-toggle-navbar-button {
     display: block;
   }
+  .logo-name-wrapper > img {
+    height: 2.4rem;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .project-card-cta-button > a {
+    font-size: 0.9rem;
+  }
 
   /* Hero */
   .hero {
@@ -281,5 +290,6 @@ img {
   }
   .footer-links {
     text-align: left;
+    gap: 0.5rem;
   }
 }
