@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "inter-regular";
+  src: url(./assets/fonts/Inter_24pt-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -9,4 +17,5 @@
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  font-family: "inter-regular", Arial, Helvetica, sans-serif;
 }
