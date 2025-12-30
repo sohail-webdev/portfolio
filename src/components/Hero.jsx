@@ -2,7 +2,7 @@ import computer_website_icon from "../assets/icons/computer-website.svg";
 
 const Hero = () => {
   return (
-    <div className="hero-wrapper">
+    <div className="hero-wrapper" id="about">
       <section className="hero">
         <div className="hero-heading-sub-heading-cta">
           <h1>

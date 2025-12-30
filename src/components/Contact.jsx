@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="footer-wrapper">
+    <div className="footer-wrapper" id="contact">
       <footer className="footer">
         <h2>Let's Work Together</h2>
         <div className="footer-sub-heading-links-wrapper">

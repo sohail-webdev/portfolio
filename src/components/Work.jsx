@@ -44,7 +44,7 @@ function ProjectCard({ project }) {
 
 const Work = () => {
   return (
-    <div className="work-wrapper">
+    <div className="work-wrapper" id="work">
       <section className="work">
         <h2>Recent Projects</h2>
         <p>Practice builds based on real-world design briefs, focused on clean layout, responsiveness, and conversion structure.</p>
