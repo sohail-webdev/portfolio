@@ -133,7 +133,7 @@ img {
 .hero-heading-sub-heading-cta button {
   border: 0.1rem solid white;
   color: white;
-  background-color: #2563eb;
+  background-color: #0096ff;
   padding: 0.6rem 1.2rem;
   border-radius: 0.4rem;
   margin-top: 1rem;
@@ -207,7 +207,7 @@ img {
   margin-bottom: 0.5rem;
 }
 .project-card-cta-button > a {
-  background-color: #2563eb;
+  background-color: #0096ff;
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 0.2rem;
@@ -352,7 +352,7 @@ img {
 /* Transition */
 .hero-heading-sub-heading-cta button,
 .project-card-cta-button > a {
-  transition: background-color 0.25s ease;
+  transition: background-color 0.2s ease;
 }
 /* Hover */
 @media (pointer: fine) {
@@ -362,7 +362,7 @@ img {
   }
   .hero-heading-sub-heading-cta button:hover,
   .project-card-cta-button > a:hover {
-    background-color: #1450d2;
+    background-color: #0086e6;
   }
 }
 /* Active */
@@ -372,5 +372,5 @@ img {
 }
 .hero-heading-sub-heading-cta button:active,
 .project-card-cta-button > a:active {
-  background-color: #1450d2;
+  background-color: #0086e6;
 }
