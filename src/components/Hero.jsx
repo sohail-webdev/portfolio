@@ -3,7 +3,7 @@ import computer_website_icon from "../assets/icons/computer-website.svg";
 const Hero = () => {
   return (
     <div className="hero-wrapper">
-      <div className="hero">
+      <section className="hero">
         <div className="hero-heading-sub-heading-cta">
           <h1>
             Fast, Modern Websites for <div>Growing Businesses</div>
@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="hero-illustration">
           <img src={computer_website_icon} alt="" draggable="false" />
         </div>
-      </div>
+      </section>
     </div>
   );
 };
