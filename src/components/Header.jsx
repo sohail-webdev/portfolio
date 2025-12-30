@@ -1,6 +1,8 @@
 import logo from "../assets/icons/logo.svg";
+import cloe_navbar_icon from "../assets/icons/close-navbar.svg";
+import open_navbar_icon from "../assets/icons/toggle-navbar.svg";
 
-const Header = () => {
+const Header = ({ isMobileNavbarVisible, toggle_mobile_navbar }) => {
   return (
     <div className="header-wrapper">
       <header className="header">
@@ -21,6 +23,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <button className="header-toggle-navbar-button" onClick={toggle_mobile_navbar}>
+          <img src={isMobileNavbarVisible ? cloe_navbar_icon : open_navbar_icon} alt="toggle navbar" />
+        </button>
       </header>
     </div>
   );
