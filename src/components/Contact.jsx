@@ -8,9 +8,9 @@ const Contact = ({ ref }) => {
             Have a project in mind? <span>Send me an email or check out my code on GitHub.</span>
           </p>
           <div className="footer-links">
-            <a href="mailto:webdev.sohail@proton.me" rel="noopener noreferrer">
+            <a href="mailto:sohail.frontend@gmail.com" rel="noopener noreferrer">
               <label>
-                Email: <span>webdev.sohail@proton.me</span>
+                Email: <span>sohail.frontend@gmail.com</span>
               </label>
             </a>
             <a href="https://github.com/sohail-webdev/" rel="noopener noreferrer" target="_blank">
